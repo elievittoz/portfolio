@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Elie Vittoz</title>
+  <style>
+    :root {
+      --bg: #020617;
+      --card: #0f172a;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56,189,248,0.15);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #020617, #020617 40%, var(--bg));
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    header {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 1.5rem 3rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    header p {
+      max-width: 800px;
+      margin-top: 1.2rem;
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 1.5rem 4rem;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 2.5rem;
+    }
+
+    nav {
+      position: sticky;
+      top: 2rem;
+      align-self: start;
+    }
+
+    nav ul { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+      font-weight: 500;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.5rem;
+      transition: all 0.2s ease;
+    }
+
+    nav a:hover { color: var(--text); background: var(--accent-soft); }
+
+    section {
+      background: var(--card);
+      border-radius: 1.25rem;
+      padding: 2.2rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    }
+
+    section h2 {
+      font-size: 1.9rem;
+      margin-bottom: 1.3rem;
+      letter-spacing: -0.02em;
+    }
+
+    section h3 {
+      margin-top: 1.6rem;
+      margin-bottom: 0.6rem;
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+
+    section p { margin-bottom: 1.1rem; }
+
+    .tag-list { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+
+    .tag {
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 900px) {
+      main { grid-template-columns: 1fr; }
+      nav { position: static; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Elie Vittoz</h1>
+  <p>
+    Étudiant en BUT Science des Données. Curieux, sensible aux relations humaines et passionné par l’analyse,
+    ce portfolio retrace mon parcours personnel, académique et mes premiers projets autour de la donnée.
+  </p>
+</header>
+
+<main>
+  <nav>
+    <ul>
+      <li><a href="#bio">Biographie</a></li>
+      <li><a href="#parcours">Parcours scolaire</a></li>
+      <li><a href="#but">Le BUT SD</a></li>
+      <li><a href="#sae">Projets & SAE</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#conclusion">Conclusion</a></li>
+    </ul>
+  </nav>
+
+  <div>
+    <section id="bio">
+      <h2>Biographie personnelle</h2>
+      <p>
+        Comme le fromage, le Brie, je suis quelqu’un de doux et moelleux. Cette métaphore résume assez bien
+        ma manière d’être : calme, bienveillant, mais capable de m’adapter à des situations exigeantes.
+      </p>
+      <p>
+        Une expérience marquante de mon parcours a été mon travail de cueilleur et calibreur d’abricots
+        dans la Drôme, à Bellecombe-Tarendol. Sans véritable encadrement, j’ai dû apprendre à me débrouiller
+        seul : travailler, manger, dormir sous tente, m’organiser et tenir sur la durée. Cette période m’a
+        appris l’autonomie, la responsabilité et l’adaptation.
+      </p>
+      <p>
+        Je suis profondément attaché aux relations humaines. J’accorde une grande importance aux liens
+        affectifs et à la compréhension des autres. Mes expériences personnelles, notamment amoureuses,
+        m’ont permis de mieux me connaître et d’affiner mon empathie.
+      </p>
+    </section>
+
+    <section id="parcours">
+      <h2>Parcours scolaire et personnel</h2>
+      <p>
+        Je suis né à Courthézon, près d’Avignon, où j’ai grandi et effectué une grande partie de ma scolarité.
+        Élève sérieux mais parfois bavard, j’ai toujours obtenu de bons résultats sans pour autant fournir
+        tous les efforts possibles.
+      </p>
+      <p>
+        Au lycée, j’ai intégré la section Bachibac, un cursus franco-espagnol exigeant qui m’a permis
+        d’obtenir un baccalauréat binational. Les cours d’histoire-géographie en espagnol ainsi que la
+        littérature hispanique ont renforcé mon attrait pour la culture espagnole, malgré la difficulté
+        du programme.
+      </p>
+      <p>
+        En 2024, j’ai obtenu mon baccalauréat avec la mention assez bien. L’été suivant, j’ai travaillé
+        comme manutentionnaire dans une usine, une expérience physiquement éprouvante mais formatrice,
+        qui m’a fait comprendre l’importance de prendre mes études au sérieux.
+      </p>
+    </section>
+
+    <section id="but">
+      <h2>Pourquoi le BUT Science des Données</h2>
+      <p>
+        Je ne sais pas encore précisément quel métier je souhaite exercer plus tard. Après plusieurs
+        bilans de compétences, aucune voie unique ne s’est imposée à moi. Le BUT Science des Données
+        représente donc une opportunité idéale grâce à sa polyvalence.
+      </p>
+      <p>
+        Cette formation m’attire par son équilibre entre mathématiques, statistiques, informatique et
+        communication. Elle permet d’apprendre à exploiter les données tout en développant des compétences
+        humaines et professionnelles essentielles.
+      </p>
+    </section>
+
+    <section id="sae">
+      <h2>Projets et Situations d’Apprentissage et d’Évaluation (SAE)</h2>
+
+      <h3>Conception et implémentation d’une base de données</h3>
+      <p>
+        Cette SAE consistait à transformer un fichier Excel contenant des données brutes d’étudiants
+        en une base de données relationnelle exploitable. J’ai conçu un schéma relationnel, écrit un
+        script SQL, puis créé la base via pgAdmin avant d’exporter les données pour les exploiter dans RStudio.
+      </p>
+      <p>
+        Ce projet m’a demandé une grande autonomie, l’enseignante ne fournissant pas de méthode précise.
+        J’ai dû tester, corriger et structurer mon travail par moi-même.
+      </p>
+
+      <div class="tag-list">
+        <span class="tag">SQL</span>
+        <span class="tag">pgAdmin</span>
+        <span class="tag">RStudio</span>
+        <span class="tag">Excel</span>
+      </div>
+
+      <h3>Analyse statistique de données immobilières (DVF)</h3>
+      <p>
+        En groupe, nous avons analysé les données DVF du premier semestre 2024 afin de comparer les
+        villes de Montpellier et Brest. À travers des graphiques, nous avons mis en évidence des
+        différences de prix, de types de biens et de profils d’habitants.
+      </p>
+
+      <h3>Valorisation de données en contexte professionnel</h3>
+      <p>
+        Ce projet portait sur l’analyse d’un questionnaire concernant le ressenti des femmes dans des
+        entreprises scientifiques. L’objectif était de raconter une histoire à partir des données
+        et d’en tirer des conclusions sociales et professionnelles pertinentes.
+      </p>
+    </section>
+
+    <section id="competences">
+      <h2>Compétences</h2>
+      <h3>Compétences techniques</h3>
+      <p>SQL, bases de données relationnelles, analyse statistique, visualisation de données.</p>
+
+      <h3>Langues</h3>
+      <p>Espagnol (C1) – Anglais (B2)</p>
+
+      <h3>Compétences transversales</h3>
+      <p>Autonomie, adaptabilité, empathie, organisation et travail en équipe.</p>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies et centres d’intérêt</h2>
+      <p>
+        Je pratique le tennis depuis 13 ans et je suis passionné de cinéma et de basket.
+        J’aime également la nature et la randonnée, notamment en Ardèche, où je prends le temps
+        de me ressourcer.
+      </p>
+    </section>
+
+    <section id="conclusion">
+      <h2>Conclusion</h2>
+      <p>
+        Ce portfolio m’a permis de prendre du recul sur mon parcours et de mieux comprendre
+        pourquoi j’ai choisi le BUT Science des Données. Derrière les chiffres et les algorithmes,
+        j’ai découvert un outil puissant pour comprendre le monde et avoir un impact.
+      </p>
+      <p>
+        Ce n’est que le début de mon parcours, mais je suis motivé à continuer d’apprendre,
+        d’évoluer et de relever les défis qui m’attendent.
+      </p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  © 2026 — Elie Vittoz
+</footer>
+
+</body>
+</html>
